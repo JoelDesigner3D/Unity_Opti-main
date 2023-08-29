@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4732439947280006
 Transform:
@@ -108,7 +108,7 @@ GameObject:
   m_TagString: MazeModule
   m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4491665142366720
 Transform:
@@ -189,6 +189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VendingMachine01
       objectReference: {fileID: 0}
+    - target: {fileID: 7114363767575621456, guid: 99094df6cda124a28b75bdd49c10ee49, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99094df6cda124a28b75bdd49c10ee49, type: 3}
 --- !u!4 &7729098393824165078 stripped
@@ -206,6 +210,14 @@ PrefabInstance:
     - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_Name
       value: mazeAngle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066111034136530769, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1071714622357501115, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_RootOrder
@@ -269,6 +281,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: mazeAngle
       objectReference: {fileID: 0}
+    - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066111034136530769, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1071714622357501115, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -330,6 +350,10 @@ PrefabInstance:
     - target: {fileID: 5778348286594841600, guid: e7064322529e14a79b3a3b2b4efb7af4, type: 3}
       propertyPath: m_Name
       value: polySurface505
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778348286594841600, guid: e7064322529e14a79b3a3b2b4efb7af4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6158661966913808175, guid: e7064322529e14a79b3a3b2b4efb7af4, type: 3}
       propertyPath: m_RootOrder
@@ -393,6 +417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: polySurface505
       objectReference: {fileID: 0}
+    - target: {fileID: 5778348286594841600, guid: e7064322529e14a79b3a3b2b4efb7af4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6158661966913808175, guid: e7064322529e14a79b3a3b2b4efb7af4, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -454,6 +482,14 @@ PrefabInstance:
     - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_Name
       value: mazeAngle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066111034136530769, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1071714622357501115, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_RootOrder
@@ -561,6 +597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VendingMachine01
       objectReference: {fileID: 0}
+    - target: {fileID: 7114363767575621456, guid: 99094df6cda124a28b75bdd49c10ee49, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99094df6cda124a28b75bdd49c10ee49, type: 3}
 --- !u!4 &2598784371932093346 stripped
@@ -578,6 +618,14 @@ PrefabInstance:
     - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_Name
       value: mazeAngle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066111034136530769, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1071714622357501115, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_RootOrder

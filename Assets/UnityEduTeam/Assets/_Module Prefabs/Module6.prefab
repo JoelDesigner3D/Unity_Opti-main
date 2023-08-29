@@ -14,7 +14,7 @@ GameObject:
   m_TagString: MazeModule
   m_Icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4180425253894310
 Transform:
@@ -92,9 +92,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 76994721800795059, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 77040980196378191, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
       propertyPath: m_Name
       value: FireCan
+      objectReference: {fileID: 0}
+    - target: {fileID: 77040980196378191, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 77402012898497609, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
@@ -154,9 +166,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 76994721800795059, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 77040980196378191, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
       propertyPath: m_Name
       value: FireCan
+      objectReference: {fileID: 0}
+    - target: {fileID: 77040980196378191, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 77402012898497609, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
@@ -216,9 +240,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 76994721800795059, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 77040980196378191, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
       propertyPath: m_Name
       value: FireCan
+      objectReference: {fileID: 0}
+    - target: {fileID: 77040980196378191, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 77402012898497609, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
@@ -237,6 +273,14 @@ PrefabInstance:
     - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_Name
       value: mazeAngle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066111034136530769, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1071714622357501115, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_RootOrder
@@ -340,9 +384,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 76994721800795059, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 77040980196378191, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
       propertyPath: m_Name
       value: FireCan
+      objectReference: {fileID: 0}
+    - target: {fileID: 77040980196378191, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 77402012898497609, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce3d5dc96667b49cf84af63130fbe3eb, type: 3}
@@ -361,6 +417,14 @@ PrefabInstance:
     - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_Name
       value: mazeAngle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066111034136530769, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1071714622357501115, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_RootOrder
@@ -423,6 +487,14 @@ PrefabInstance:
     - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_Name
       value: mazeAngle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066111034136530769, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1071714622357501115, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_RootOrder
@@ -542,6 +614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mazeWallBase
       objectReference: {fileID: 0}
+    - target: {fileID: 8236117353353988767, guid: b1e77a77eab7246e1bd6b4b5be8d4ae1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1e77a77eab7246e1bd6b4b5be8d4ae1, type: 3}
 --- !u!4 &3285919290946254944 stripped
@@ -616,6 +692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mazeWallBase
       objectReference: {fileID: 0}
+    - target: {fileID: 8236117353353988767, guid: b1e77a77eab7246e1bd6b4b5be8d4ae1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1e77a77eab7246e1bd6b4b5be8d4ae1, type: 3}
 --- !u!4 &2065687858424325353 stripped
@@ -633,6 +713,14 @@ PrefabInstance:
     - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_Name
       value: mazeAngle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065778180563633029, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066111034136530769, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1071714622357501115, guid: e58a103d5e095487e8de60d2aaaefec2, type: 3}
       propertyPath: m_RootOrder
