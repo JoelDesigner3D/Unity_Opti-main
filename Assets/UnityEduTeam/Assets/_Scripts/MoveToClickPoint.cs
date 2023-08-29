@@ -33,7 +33,7 @@ public class MoveToClickPoint : MonoBehaviour
             if (GetComponent<NavMeshAgent>() != null)
             {
                 GetComponent<NavMeshAgent>().isStopped = true;
-                Debug.Log("Player reach is destination !");
+                Debug.Log("Player reach is destination !");  // you win !!
             }
         }
 

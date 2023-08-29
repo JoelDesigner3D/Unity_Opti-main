@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.888
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16236298, g: 0.2006991, b: 0.25954008, a: 0.888}
+  m_IndirectSpecularColor: {r: 0.16236253, g: 0.20069844, b: 0.25953925, a: 0.888}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: ef932405b0190864f9508fec44f71e34, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 168e8a10b998f4075a013219e82983cc, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -941,6 +941,10 @@ PrefabInstance:
     - target: {fileID: 199674839603299708, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
       propertyPath: m_RenderMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199674839603299708, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 199674839603299708, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2915,7 +2919,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889951840}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &889951842
 Behaviour:
   m_ObjectHideFlags: 0
@@ -2923,7 +2927,7 @@ Behaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889951840}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &889951843
 Camera:
   m_ObjectHideFlags: 0
@@ -3184,6 +3188,37 @@ MonoBehaviour:
   - {fileID: 1793978803753062, guid: 671d5bb1e60302240a7739eb4930a2cf, type: 3}
   - {fileID: 1448267440622012, guid: baf36596fe8617243994e6f34688dc2e, type: 3}
   - {fileID: 1165304679689946, guid: c12a632329885364296e928757ea5ba2, type: 3}
+  EnemySpawnPoint:
+  - {fileID: 1217009946}
+  - {fileID: 489050256}
+  - {fileID: 247346773}
+  - {fileID: 420754710}
+  - {fileID: 2133154717}
+  - {fileID: 1936465150}
+  - {fileID: 760696140}
+  - {fileID: 1830911705}
+  - {fileID: 614800386}
+  - {fileID: 1034713385}
+  - {fileID: 1580454057}
+  - {fileID: 2031487844}
+  - {fileID: 562500332}
+  - {fileID: 118267416}
+  - {fileID: 1072897593}
+  - {fileID: 225096812}
+  - {fileID: 44335412}
+  - {fileID: 84387855}
+  - {fileID: 1881686136}
+  - {fileID: 1046885624}
+  - {fileID: 1179135366}
+  - {fileID: 398220510}
+  - {fileID: 652020671}
+  - {fileID: 376297312}
+  - {fileID: 1708559977}
+  - {fileID: 2072595257}
+  - {fileID: 24522460}
+  - {fileID: 2015460670}
+  - {fileID: 2082229178}
+  - {fileID: 2076194987}
 --- !u!1 &980336814
 GameObject:
   m_ObjectHideFlags: 0
