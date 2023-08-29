@@ -5,7 +5,11 @@ using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 public class SimpleAI : MonoBehaviour {
+
     [Header("Agent Field of View Properties")]
+
+    private GameObject player;
+
     public float viewRadius;
     public float viewAngle;
 
@@ -30,6 +34,9 @@ public class SimpleAI : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
+        player = GameObject.FindGameObjectWithTag("Player");
+
         currentDestination = RandomNavSphere(transform.position, patrolRadius, -1);
         maxNumberOfNewDestinationBeforeDeath = Random.Range(5, 50);
     }
@@ -75,6 +82,7 @@ public class SimpleAI : MonoBehaviour {
     {
         if (playerTarget != null)
         {
+            Debug.Log("Player seen !!");
             GetComponentInChildren<Animator>().SetTrigger("run");
             GetComponent<NavMeshAgent>().speed = runSpeed;
             currentDestination = playerTarget.transform.position;
@@ -95,6 +103,51 @@ public class SimpleAI : MonoBehaviour {
     // }
 
     #region Vision
+
+    void FindVisibleTargets()
+    {
+
+        playerTarget = null;
+        playerSeen = false;
+
+        //GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+
+        /**
+        if (players.Length == 0)
+        {
+            return;
+        }
+        else
+        {
+            Debug.Log("Found Player");
+        }
+        */
+        
+
+        //foreach (GameObject player in players)
+        //{
+            Vector3 dirToTarget = (player.transform.position - transform.position).normalized;
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, dirToTarget, out hit))
+            {
+                float dstToTarget = Vector3.Distance(transform.position, player.transform.position);
+                if (dstToTarget <= viewRadius)
+                {
+                    if (Vector3.Angle(transform.forward, dirToTarget) <= viewAngle / 2)
+                    {
+                        if (hit.collider.tag == "Player")
+                        {
+                            playerSeen = true;
+                            playerTarget = hit.transform;
+                        }
+                    }
+                }
+            }
+        //}
+    }
+
+    /*
+
     void FindVisibleTargets()
     {
 
@@ -135,6 +188,8 @@ public class SimpleAI : MonoBehaviour {
         }
     }
 
+    */
+
     public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGlobal)
     {
         if (!angleIsGlobal)
@@ -159,6 +214,8 @@ public class SimpleAI : MonoBehaviour {
     }
 
     #endregion
+
+    /*
 
     private bool HasFindPlayer()
     {
@@ -186,6 +243,8 @@ public class SimpleAI : MonoBehaviour {
 
         return result;
     }
+
+    */
     
     // Update is called once per frame
     void Update () {
@@ -199,9 +258,12 @@ public class SimpleAI : MonoBehaviour {
             currentState = State.Wandering;
         }
 
+        /*
+
         if (HasFindPlayer())
         {
             SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
         }
+        */
 	}
 }
