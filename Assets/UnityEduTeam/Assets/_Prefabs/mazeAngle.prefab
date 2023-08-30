@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1071714622357501115
 Transform:
@@ -125,6 +125,10 @@ PrefabInstance:
     - target: {fileID: 4514556148027788100, guid: d92ed32526ca04573aeeff38aba8587a, type: 3}
       propertyPath: m_Name
       value: mazeWall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514556148027788100, guid: d92ed32526ca04573aeeff38aba8587a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4518222903663869198, guid: d92ed32526ca04573aeeff38aba8587a, type: 3}
       propertyPath: m_RootOrder

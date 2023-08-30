@@ -5,11 +5,11 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 5
+    smallestOccluder: 1
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 42e027c7ce820724e83b38c65f1ace66
+  m_OcclusionCullingData: {fileID: 36300000, guid: bc6058856c88d4fad8900022b5eb37f7, type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.371
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06783389, g: 0.08385036, b: 0.10843363, a: 0.371}
+  m_IndirectSpecularColor: {r: 0.06783408, g: 0.08385064, b: 0.10843397, a: 0.371}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -527,6 +527,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100076, guid: 9d9569a11a06f464bb9a5618bdd51bba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 100078, guid: 9d9569a11a06f464bb9a5618bdd51bba, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -876,11 +880,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198329759521040852, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
       propertyPath: randomSeed
-      value: 1004835341
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198329759521040852, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
+      propertyPath: cullingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198329759521040852, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 198329759521040852, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.291
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 198329759521040852, guid: f45ae71bed3e6794389078f9a089951f, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
@@ -2849,8 +2861,6 @@ GameObject:
   m_Component:
   - component: {fileID: 889951844}
   - component: {fileID: 889951843}
-  - component: {fileID: 889951842}
-  - component: {fileID: 889951841}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2858,22 +2868,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &889951841
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889951840}
-  m_Enabled: 0
---- !u!124 &889951842
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889951840}
-  m_Enabled: 0
 --- !u!20 &889951843
 Camera:
   m_ObjectHideFlags: 0
