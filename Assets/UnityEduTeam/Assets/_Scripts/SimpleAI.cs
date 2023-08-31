@@ -52,7 +52,7 @@ public class SimpleAI : MonoBehaviour {
                 break;
 
             default:
-                WanderBehavior();
+                //WanderBehavior();
                 break;
 
         }
@@ -82,7 +82,7 @@ public class SimpleAI : MonoBehaviour {
     {
         if (playerTarget != null)
         {
-            Debug.Log("Player seen !!");
+            //Debug.Log("Player seen !!");
             GetComponentInChildren<Animator>().SetTrigger("run");
             GetComponent<NavMeshAgent>().speed = runSpeed;
             currentDestination = playerTarget.transform.position;
@@ -247,7 +247,7 @@ public class SimpleAI : MonoBehaviour {
     */
     
     // Update is called once per frame
-    void Update () {
+    void FixedUpdate () {
         CheckState();
 
         if (playerSeen)

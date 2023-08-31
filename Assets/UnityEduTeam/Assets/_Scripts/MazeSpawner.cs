@@ -12,12 +12,14 @@ public class MazeSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        
         SpawnPoints.AddRange(GameObject.FindGameObjectsWithTag("ModuleLoc"));
 
         foreach (GameObject SpawnPoint in SpawnPoints)
         {
             MazeModules.Add(Instantiate(Modules[Random.Range(0, Modules.Count)], SpawnPoint.transform.position, Quaternion.identity));
         }
+        
 	}
 
 }
