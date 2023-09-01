@@ -32,10 +32,17 @@ public class SimpleAI : MonoBehaviour {
     private enum State {Wandering, Chasing};
     private State currentState;
 
+    private NavMeshAgent navMeshAgent;
+    private Animator animator;
+
+
     // Use this for initialization
     void Start () {
 
         player = GameObject.FindGameObjectWithTag("Player");
+
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        animator = GetComponentInChildren<Animator>();
 
         currentDestination = RandomNavSphere(transform.position, patrolRadius, -1);
         maxNumberOfNewDestinationBeforeDeath = Random.Range(5, 50);
@@ -60,15 +67,15 @@ public class SimpleAI : MonoBehaviour {
 
     void WanderBehavior()
     {
-        GetComponentInChildren<Animator>().SetTrigger("walk");
-        GetComponent<NavMeshAgent>().speed = walkSpeed;
+        animator.SetTrigger("walk");
+        navMeshAgent.speed = walkSpeed;
 
-        float dist = GetComponent<NavMeshAgent>().remainingDistance;
+        float dist = navMeshAgent.remainingDistance;
 
-        if (dist != Mathf.Infinity && GetComponent<NavMeshAgent>().pathStatus == NavMeshPathStatus.PathComplete)
+        if (dist != Mathf.Infinity && navMeshAgent.pathStatus == NavMeshPathStatus.PathComplete)
         {
             currentDestination = RandomNavSphere(transform.position, patrolRadius, -1);
-            GetComponent<NavMeshAgent>().SetDestination(currentDestination);
+            navMeshAgent.SetDestination(currentDestination);
             maxNumberOfNewDestinationBeforeDeath--;
             if (maxNumberOfNewDestinationBeforeDeath <= 0)
             {
@@ -83,10 +90,10 @@ public class SimpleAI : MonoBehaviour {
         if (playerTarget != null)
         {
             //Debug.Log("Player seen !!");
-            GetComponentInChildren<Animator>().SetTrigger("run");
-            GetComponent<NavMeshAgent>().speed = runSpeed;
+            animator.SetTrigger("run");
+            navMeshAgent.speed = runSpeed;
             currentDestination = playerTarget.transform.position;
-            GetComponent<NavMeshAgent>().SetDestination(currentDestination);
+            navMeshAgent.SetDestination(currentDestination);
         }
         else
         {
