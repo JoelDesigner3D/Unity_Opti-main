@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.371
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06783408, g: 0.08385064, b: 0.10843397, a: 0.371}
+  m_IndirectSpecularColor: {r: 0.06783389, g: 0.08385036, b: 0.10843363, a: 0.371}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1900,6 +1900,51 @@ Transform:
   m_Father: {fileID: 979369032}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &429557660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 429557662}
+  - component: {fileID: 429557661}
+  m_Layer: 0
+  m_Name: Pooling
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &429557661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429557660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60630982d8e8d47dab77bf5d849a0d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesGenerator: {fileID: 1500175141}
+--- !u!4 &429557662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429557660}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &460722390
 GameObject:
   m_ObjectHideFlags: 0
@@ -3125,10 +3170,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1fdab845b4487a4c860dd4293d1aa8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPrefabs:
-  - {fileID: 1793978803753062, guid: 671d5bb1e60302240a7739eb4930a2cf, type: 3}
-  - {fileID: 1448267440622012, guid: baf36596fe8617243994e6f34688dc2e, type: 3}
-  - {fileID: 1165304679689946, guid: c12a632329885364296e928757ea5ba2, type: 3}
   EnemySpawnPoint:
   - {fileID: 1217009946}
   - {fileID: 489050256}
@@ -3160,7 +3201,7 @@ MonoBehaviour:
   - {fileID: 2015460670}
   - {fileID: 2082229178}
   - {fileID: 2076194987}
-  enemiesGenerator: {fileID: 1500175141}
+  enemyPooling: {fileID: 429557661}
 --- !u!1 &980336814
 GameObject:
   m_ObjectHideFlags: 0
