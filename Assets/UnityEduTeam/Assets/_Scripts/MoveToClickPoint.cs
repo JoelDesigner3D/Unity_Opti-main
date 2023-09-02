@@ -51,12 +51,12 @@ public class MoveToClickPoint : MonoBehaviour
         if (navMesh != null && navMesh.velocity.magnitude > .1f)
         {
             animator.SetBool("running", true);
-            Debug.Log("start walking");
+            //Debug.Log("start walking");
         }
         else
         {
             animator.SetBool("running", false);
-            Debug.Log("start running");
+            //Debug.Log("start running");
         }
 
     }

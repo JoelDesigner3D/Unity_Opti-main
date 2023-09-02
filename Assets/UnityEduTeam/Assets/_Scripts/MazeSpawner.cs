@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class MazeSpawner : MonoBehaviour {
 
-    public List<GameObject> Modules = new List<GameObject>();
+    public List<GameObject> Modules = new List<GameObject>();  // prefabs
 
-    private List<GameObject> SpawnPoints = new List<GameObject>();
+    private List<GameObject> SpawnPoints = new List<GameObject>(); // GO
 
-    private List<GameObject> MazeModules = new List<GameObject>();
+    private List<GameObject> MazeModules = new List<GameObject>(); // instances
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +19,5 @@ public class MazeSpawner : MonoBehaviour {
         {
             MazeModules.Add(Instantiate(Modules[Random.Range(0, Modules.Count)], SpawnPoint.transform.position, Quaternion.identity));
         }
-        
 	}
-
 }

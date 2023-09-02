@@ -76,7 +76,9 @@ public class SimpleAI : MonoBehaviour {
         {
             currentDestination = RandomNavSphere(transform.position, patrolRadius, -1);
             navMeshAgent.SetDestination(currentDestination);
+
             maxNumberOfNewDestinationBeforeDeath--;
+
             if (maxNumberOfNewDestinationBeforeDeath <= 0)
             {
                 Destroy(gameObject);
@@ -102,6 +104,8 @@ public class SimpleAI : MonoBehaviour {
         }
     }
 
+    // TODO
+
     // private void OnTriggerEnter(Collider other)
     // {
     //     if (other.tag == "Player")
@@ -117,85 +121,24 @@ public class SimpleAI : MonoBehaviour {
         playerTarget = null;
         playerSeen = false;
 
-        //GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        Vector3 dirToTarget = (player.transform.position - transform.position).normalized;
 
-        /**
-        if (players.Length == 0)
-        {
-            return;
-        }
-        else
-        {
-            Debug.Log("Found Player");
-        }
-        */
-        
+        RaycastHit hit;
 
-        //foreach (GameObject player in players)
-        //{
-            Vector3 dirToTarget = (player.transform.position - transform.position).normalized;
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, dirToTarget, out hit))
+        if (Physics.Raycast(transform.position, dirToTarget, out hit))
+        {
+            float dstToTarget = Vector3.Distance(transform.position, player.transform.position);
+
+            if (dstToTarget <= viewRadius && Vector3.Angle(transform.forward, dirToTarget) <= viewAngle / 2 && hit.collider.tag == "Player")
             {
-                float dstToTarget = Vector3.Distance(transform.position, player.transform.position);
-                if (dstToTarget <= viewRadius)
-                {
-                    if (Vector3.Angle(transform.forward, dirToTarget) <= viewAngle / 2)
-                    {
-                        if (hit.collider.tag == "Player")
-                        {
-                            playerSeen = true;
-                            playerTarget = hit.transform;
-                        }
-                    }
-                }
-            }
-        //}
-    }
-
-    /*
-
-    void FindVisibleTargets()
-    {
-
-        playerTarget = null;
-        playerSeen = false;
-        
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-
-        
-        if (players.Length == 0)
-        {
-            return;
-        }
-        else
-        {
-            Debug.Log("Found Player");
-        }
-
-        foreach (GameObject player in players)
-        {
-            Vector3 dirToTarget = (player.transform.position - transform.position).normalized;
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, dirToTarget, out hit))
-            {
-                float dstToTarget = Vector3.Distance(transform.position, player.transform.position);
-                if (dstToTarget <= viewRadius)
-                {
-                    if (Vector3.Angle(transform.forward, dirToTarget) <= viewAngle / 2)
-                    {
-                        if (hit.collider.tag == "Player")
-                        {
-                            playerSeen = true;
-                            playerTarget = hit.transform;
-                        }
-                    }
-                }
+                    
+                    playerSeen = true;
+                    playerTarget = hit.transform;
+                        
             }
         }
     }
 
-    */
 
     public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGlobal)
     {
@@ -206,6 +149,7 @@ public class SimpleAI : MonoBehaviour {
 
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
     }
+
 
     public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
     {
@@ -255,6 +199,7 @@ public class SimpleAI : MonoBehaviour {
     
     // Update is called once per frame
     void FixedUpdate () {
+
         CheckState();
 
         if (playerSeen)

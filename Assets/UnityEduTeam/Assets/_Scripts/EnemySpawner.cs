@@ -6,7 +6,8 @@ public class EnemySpawner : MonoBehaviour
 {
    // [SerializeField] List<GameObject> EnemyPrefabs;
     [SerializeField] List<GameObject> EnemySpawnPoint;
-    [SerializeField] EnemiesGenerator enemiesGenerator;
+   // [SerializeField] EnemiesGenerator enemiesGenerator;
+    [SerializeField] EnemyPooling enemyPooling;
 
 
     void Start()
@@ -16,7 +17,9 @@ public class EnemySpawner : MonoBehaviour
         {
            int RandomNumber = Random.Range(0, EnemySpawnPoint.Count);
 
-           enemiesGenerator.Generate(EnemySpawnPoint[RandomNumber].transform.position, Quaternion.identity);
+            //enemiesGenerator.Generate(EnemySpawnPoint[RandomNumber].transform.position, Quaternion.identity);
+            enemyPooling.Get(EnemySpawnPoint[RandomNumber].transform.position);
+
         }
         
     }
